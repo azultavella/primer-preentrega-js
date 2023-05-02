@@ -34,14 +34,12 @@ function calculoNotaFinal (notaExamenParcial, notaTrabajoPractico, notaExamenFin
 
     switch (true) {
         case promedio >= 9:
-            return 5;
+            return "excelente";
         case promedio >= 8:
-            return 4;
+            return "muy bueno";
         case promedio >= 7:
-            return 3;
-        case promedio >= 6:
-            return 2;
+            return "bueno";
         default:
-            return 1;
+            return "desaprobado";
     }
 }
